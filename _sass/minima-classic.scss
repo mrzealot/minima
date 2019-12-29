@@ -1,15 +1,19 @@
 @charset "utf-8";
 
-$brand-color:           #828282 !default;
+$brand-color:           #eee !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
 $brand-color-dark:      darken($brand-color, 25%) !default;
 
-$text-color:            #111 !default;
-$background-color:      #fdfdfd !default;
-$code-background-color: #eef !default;
+$text-color:            #eee !default;
+$text-color-dark:       #ccc !default;
+$background-color:      #333 !default;
+$background-color-dark: #222 !default;
 
-$link-base-color:       #2a7ae2 !default;
-$link-visited-color:    darken($link-base-color, 15%) !default;
+$code-background-color: #444 !default;
+$code-border-color:     #555 !default;
+
+$link-base-color:       #16cb46 !default;
+$link-visited-color:    darken($link-base-color, 0%) !default;
 
 $table-text-color:      lighten($text-color, 18%) !default;
 $table-zebra-color:     lighten($brand-color, 46%) !default;

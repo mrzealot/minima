@@ -2,18 +2,23 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-color-dark;
-  border-bottom: 1px solid $brand-color-light;
+  //border-top: 5px solid $brand-color-dark;
+  //border-bottom: 1px solid $brand-color-light;
+  background-color: $background-color-dark;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  & > .wrapper {
+    position: relative;
+  }
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -24,8 +29,18 @@
 
   &,
   &:visited {
-    color: $brand-color-dark;
+    color: $text-color;
   }
+}
+
+.title-hash {
+  color: $link-base-color;
+  display: block;
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
 }
 
 .site-nav {
@@ -74,6 +89,8 @@
   }
 
   .page-link {
+    @include relative-font-size(1.3);
+    cursor: pointer;
     color: $text-color;
     line-height: $base-line-height;
     display: block;
@@ -84,6 +101,10 @@
       margin-right: 0;
     }
     margin-left: 20px;
+
+    &:hover {
+      color: $link-base-color;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -122,13 +143,16 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $brand-color-light;
-  padding: $spacing-unit 0;
+  //border-top: 1px solid $brand-color-light;
+  background-color: $background-color-dark;
+  padding: $spacing-unit / 2;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: 0;
 }
 
 .contact-list,
@@ -149,6 +173,10 @@
   width:         calc(100% - (#{$spacing-unit} / 2));
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+}
+
+.footer-col.right {
+  text-align: right;
 }
 
 .footer-col-1,
@@ -210,11 +238,17 @@
   > li {
     margin-bottom: $spacing-unit;
   }
+
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
 .post-meta {
   font-size: $small-font-size;
-  color: $brand-color;
+  color: $text-color-dark;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .post-link {
