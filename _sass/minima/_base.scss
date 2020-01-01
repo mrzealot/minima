@@ -27,6 +27,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  letter-spacing: .1px;
 }
 
 
@@ -34,6 +35,10 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
+h2, h3, h4, h5, h6 {
+  margin-top: $spacing-unit;
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -149,6 +154,7 @@ blockquote {
  */
 pre,
 code {
+  font-family: $base-font-family;
   @include relative-font-size(0.9375);
   border: 1px solid $code-border-color;
   border-radius: 3px;
@@ -261,4 +267,11 @@ table {
   td {
     border: 1px solid $table-border-color;
   }
+}
+
+main p,
+main ul,
+main ol,
+main blockquote {
+  font-family: $serif-font-family;
 }

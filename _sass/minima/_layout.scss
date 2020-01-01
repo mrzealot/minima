@@ -175,8 +175,10 @@
   padding-left: $spacing-unit / 2;
 }
 
-.footer-col.right {
+.footer-col.description {
   text-align: right;
+  @include relative-font-size(0.8);
+  margin-top: $spacing-unit;
 }
 
 .footer-col-1,
@@ -228,7 +230,7 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.625);
 }
 
 .post-list {
@@ -280,27 +282,15 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    @include relative-font-size(1.75);
-
-    @media screen and (min-width: $on-large) {
-      @include relative-font-size(2);
-    }
+    @include relative-font-size(1.625);
   }
 
   h3 {
     @include relative-font-size(1.375);
-
-    @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.625);
-    }
   }
 
   h4 {
     @include relative-font-size(1.125);
-
-    @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.25);
-    }
   }
 }
 
