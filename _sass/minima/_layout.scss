@@ -377,3 +377,27 @@
     padding: 4px 15px;
   }
 }
+
+
+
+
+div > blockquote {
+  position: relative;
+  padding-right: 1.5 * $spacing-unit;
+}
+
+.quote-translate {
+  position: absolute;
+  right: 0;
+  border: 2px solid $text-color;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: $text-color;
+  @include relative-font-size(0.75);
+
+  &:hover {
+    background-color: $text-color;
+    color: $background-color-dark;
+  }
+}
