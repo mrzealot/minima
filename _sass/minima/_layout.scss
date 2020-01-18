@@ -423,3 +423,27 @@ div > blockquote {
 .page-navigation .next {
   text-align: right;
 }
+
+
+
+
+.greeter-wrapper {
+  background-color: $background-color-light;
+  padding-top: $spacing-unit;
+  padding-bottom: 2 * $spacing-unit;
+  border-bottom: 2px solid $background-color-dark;
+}
+
+.greeter-heading {
+  text-align: center;
+}
+
+h3.greeter-heading {
+  margin-top: 0;
+  margin-bottom: $spacing-unit;
+}
+
+.greeter-p {
+  font-family: $serif-font-family;
+  //@include relative-font-size(0.85);
+}
