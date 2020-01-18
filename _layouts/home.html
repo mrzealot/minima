@@ -25,11 +25,14 @@ layout: default
             {{ post.date | date: date_format }}
           </time>
           {%- if post.tags != empty -%}
-          &mdash; <span class="tags">
+          &nbsp;&ndash;&nbsp; <span class="tags">
             {{ site.minima.tags_title | default: "Tags" }}:
             {{ post.tags | join: ", " }}
           </span>
           {%- endif -%}
+          &nbsp;&ndash;&nbsp; <span class="tags">
+            {{ post.content | strip_html | number_of_words | divided_by:200 }} perc
+          </span>
         </span>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
