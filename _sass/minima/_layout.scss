@@ -447,3 +447,14 @@ h3.greeter-heading {
   font-family: $serif-font-family;
   //@include relative-font-size(0.85);
 }
+
+
+
+
+#progressbar {
+  height: 6px;
+
+  > .bar {
+    background-color: $link-base-color;
+  }
+}

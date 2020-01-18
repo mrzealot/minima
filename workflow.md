@@ -13,4 +13,6 @@
     - `git commit -am "<REAL COMMIT MESSAGE>" && git push`
 
 4. reset develop to current master
-    - `git checkout develop && git reset --hard master && git checkout master`
+    - `git checkout develop`
+    - `git reset --hard master && git push -f`
+    - `git checkout master`
