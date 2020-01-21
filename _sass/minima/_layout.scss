@@ -300,18 +300,20 @@
 
 .social-media-list {
   display: table;
-  margin: 0 auto;
   li {
     float: left;
     margin: 0 5px;
     &:first-of-type { margin-left: 0 }
     &:last-of-type { margin-right: 0 }
     a {
+      color: $text-color;
       display: block;
       padding: $spacing-unit / 4;
-      border: 1px solid $brand-color-light
+
+      &:hover {
+        color: $link-base-color;
+      }
     }
-    &:hover .svg-icon { fill: currentColor; }
   }
 }
 
@@ -395,6 +397,7 @@ div > blockquote {
   font-weight: bold;
   color: $text-color;
   @include relative-font-size(0.75);
+  cursor: pointer;
 
   &:hover {
     background-color: $text-color;
