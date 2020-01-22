@@ -35,7 +35,7 @@ layout: default
           </span>
         </span>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {{ post.excerpt | markdownify }}
         {%- endif -%}
       </li>
       {%- endfor -%}
