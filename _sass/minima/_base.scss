@@ -98,6 +98,10 @@ ol > li > ul {
   list-style-type: disc;
 }
 
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
+
 
 
 /**
