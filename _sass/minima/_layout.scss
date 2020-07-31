@@ -395,7 +395,7 @@
 
 
 
-div > blockquote {
+div > blockquote, li > blockquote {
   position: relative;
   padding-right: 1.5 * $spacing-unit;
 }

@@ -1,5 +1,5 @@
 $(function () {
-    $('div > blockquote').each(function () {
+    $('div > blockquote, li > blockquote').each(function () {
         var quote = $(this)
         var translations = quote.children('blockquote')
         if (!translations.length) return
