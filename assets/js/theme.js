@@ -7,11 +7,11 @@ function set_theme(theme) {
         $('#darkmode').hide()
     }
     document.documentElement.setAttribute('data-theme', theme)
-    sessionStorage.setItem('theme', theme)
+    localStorage.setItem('theme', theme)
 }
 
 const prefers_dark = window.matchMedia('(prefers-color-scheme: dark)')
-const storage_theme = sessionStorage.getItem('theme')
+const storage_theme = localStorage.getItem('theme')
 
 // initial setup
 set_theme(storage_theme || (prefers_dark.matches ? 'dark' : 'light'))
