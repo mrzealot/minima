@@ -20,13 +20,12 @@
   {%- include subscribe.html -%}
   {%- include footer.html -%}
   
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/multiquotes.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/theme.js' | relative_url }}"></script>
   
   {% if page.layout == "post" %}
-  <script src="https://unpkg.com/nanobar@0.4.2/nanobar.min.js"></script>
+  <script src="{{ 'assets/js/nanobar.min.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/progress.js' | relative_url }}"></script>
   {% endif %}
 
