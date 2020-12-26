@@ -52,6 +52,7 @@
   border: 1px solid var(--brand-color-light);
   border-radius: 5px;
   text-align: right;
+  user-select: none;
 
   .nav-trigger {
       display: none;
@@ -493,4 +494,45 @@ h3.greeter-heading {
 
 #lightmode {
   margin-right: 0;
+}
+
+
+
+
+
+.modal__content {
+  text-align: center;
+}
+
+.twitter-typeahead {
+  width: 80%;
+}
+
+#search-term {
+  width: 100%;
+  border: 2px solid $text-color;
+  border-radius: 5px;
+  color: $text-color;
+  font-size: 20px;
+  line-height: $base-line-height * 1.5;
+  font-weight: bold;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.tt-menu {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  color: $text-color-dark;
+}
+
+.tt-suggestion {
+  cursor: pointer;
+}
+
+.tt-cursor {
+  color: $link-base-color;
+  font-weight: bold;
 }

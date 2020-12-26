@@ -19,10 +19,16 @@
   
   {%- include subscribe.html -%}
   {%- include footer.html -%}
+  {%- include search.html -%}
   
   <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/multiquotes.js' | relative_url }}"></script>
   <script src="{{ 'assets/js/theme.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/micromodal.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/hotkeys.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/typeahead.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/fuse.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/search.js' | relative_url }}"></script>
   
   {% if page.layout == "post" %}
   <script src="{{ 'assets/js/nanobar.min.js' | relative_url }}"></script>
